@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+}
+
+.header{
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1220px;
+    top: 28px;
+    left: 56px;
+}
+
+.header a{
+    text-decoration: none;
+    background: #f40612;
+    color: #fff;
+    display: inline-block;
+    align-self: flex-start;
+    padding: 8px 20px;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.main{
+    height: 785px;
+    background: url(../image/banner.jpg) center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.main-child{
+    z-index: 1;
+    display: grid;
+    justify-items: center;
+}
+
+.main h1{
+    color: #fff;
+    font-size: 55px;
+    text-align: center;
+    max-width: 720px;
+    line-height: 55px;
+    font-weight: 700;
+}
+
+.main h2{
+    font-size: 26px;
+    font-weight: 400;
+    vertical-align: baseline;
+    margin: 15px 25px;
+}
+
+.main h3{
+    font-size: 19px;
+    font-weight: 400;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-banner{
+    display: grid;
+    grid-template-columns: 470px 200px;
+    margin-top: 10px;
+}
+
+.form-banner input{
+    padding: 20px 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.form-banner button{
+    color: #fff;
+    background-color:#f40612;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.1s;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 190px;
+    padding: 0 26px 0 26px;
+}
+
+.form-banner button:hover{
+    background: #f40612;
+    color:rgb(255, 255, 255);
+}
+
+.form-banner button i{
+    font-size: 18px;
+    line-height: 18px;
+    padding-left: 5px;
+    text-align: center;
+}
+
+.gradient{
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.container{
+    max-width: 1130px;
+    margin: 0 auto;
+}
+
+.section{
+    background: black;
+    padding: 4rem 0;
+    border-top: 8px solid #222;
+}
+
+.section h1{
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.section h2{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+}
+
+.container img{
+    display: block;
+    width: 100%;
+}
+
+.img-tv{
+    position: relative;
+}
+
+.img-tv img{
+    position: relative;
+    z-index: 1;
+}
+
+.video-tv{
+    width: 400px;
+    position: absolute;
+    top: 92px;
+    left: 80px;
+}
+
+.download .grid > div:first-child{
+    order: 2;
+}
+
+.download .img-tv{
+    order: 1;
+}
+
+.device-pile .video-tv{
+    width: 340px;
+    top: 40px;
+    left: 100px;
+}
+
+.footer .form-banner{
+    margin-top: 0px;
+}
+
+.footer{
+    background: black;
+    border-top: 8px solid #222;
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+    display: grid;
+    justify-content: center;
+}
+
+.footer p{
+    margin-top: 2rem;
+    color: #757575;
+    font-size: 13px;
+}
